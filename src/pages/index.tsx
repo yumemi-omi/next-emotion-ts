@@ -1,11 +1,18 @@
 import { FC } from 'react';
 import Button from '@/components/root/Button';
+import { css } from '@emotion/core';
+
+const myStyle = css({
+  color: 'hotpink',
+  fontSize: '1rem',
+  fontWeight: 'bold',
+});
 
 const Home: FC = () => {
   return (
-    <section className="h-screen w-4/5 max-w-5xl mx-auto flex items-center justify-center flex-col">
-      <h1 className="mb-4 text-green-500 text-3xl">サンプル</h1>
-      <p className="mb-2 text-center">
+    <section css={myStyle}>
+      <h1>サンプル</h1>
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
         blanditiis consequatur eius hic ipsam nostrum omnis optio! Doloribus
         quaerat quis ratione? At, maiores voluptas? Eveniet odio omnis

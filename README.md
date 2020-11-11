@@ -1,1 +1,1 @@
-## Next.js x Tailwind template
+## NextJs x Emotion x TypeScript template
