@@ -1,6 +1,8 @@
 import { css, Global } from '@emotion/core';
+import { FC } from 'react';
+import 'ress';
 
-export const GlobalStyles = (): JSX.Element => (
+export const GlobalStyles: FC = () => (
   <Global
     styles={css`
       html,

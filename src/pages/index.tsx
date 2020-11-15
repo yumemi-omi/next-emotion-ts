@@ -2,11 +2,11 @@ import { FC } from 'react';
 import Button from '@/components/root/Button';
 import { css } from '@emotion/core';
 
-const myStyle = css({
-  color: 'hotpink',
-  fontSize: '1rem',
-  fontWeight: 'bold',
-});
+const myStyle = css`
+  color: 'hotpink';
+  font-size: '1rem';
+  font-weight: 'bold';
+`;
 
 const Home: FC = () => {
   return (
