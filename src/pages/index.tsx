@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Button from '@/components/root/Button';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 const myStyle = css`
   color: 'hotpink';
