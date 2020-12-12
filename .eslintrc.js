@@ -1,6 +1,12 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@emotion', 'react', '@typescript-eslint'],
+  plugins: [
+    '@emotion',
+    '@typescript-eslint',
+    'react',
+    'react-hooks',
+    'prettier'
+  ],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -11,10 +17,17 @@ module.exports = {
     'prettier/react',
   ],
   env: {
-    es6: true,
     browser: true,
-    jest: true,
     node: true,
+    es2020: true,
+    jest: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   rules: {
     'react/prop-types': 'off',
