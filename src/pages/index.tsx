@@ -3,9 +3,9 @@ import Button from '@/components/root/Button';
 import { css } from '@emotion/react';
 
 const myStyle = css`
-  color: 'hotpink';
-  font-size: '1rem';
-  font-weight: 'bold';
+  color: hotpink;
+  font-size: 1rem;
+  font-weight: bold;
 `;
 
 const Home: FC = () => {
