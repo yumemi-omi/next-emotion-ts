@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
+const config =  {
   parser: '@typescript-eslint/parser',
   plugins: [
     '@emotion',
@@ -35,3 +36,5 @@ module.exports = {
     "@emotion/pkg-renaming": "error",
   },
 };
+
+module.exports = config
