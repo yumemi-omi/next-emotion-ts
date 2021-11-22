@@ -1,10 +1,8 @@
 {
-  "extends": [
-    "config:base"
-  ],
   "baseBranches": ["develop"],
   "timezone": "Asia/Tokyo",
   "schedule": "every weekend",
+  "automergeType": "branch",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
