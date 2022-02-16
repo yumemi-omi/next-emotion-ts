@@ -1,10 +1,12 @@
 {
   "baseBranches": ["develop"],
+  "timezone": "Asia/Tokyo",
   "schedule": "every weekend",
-  "minor": {
-    "groupName": "all dependencies"
-  },
-  "extends": [
-    "config:base"
+  "automergeType": "branch",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
   ]
 }
