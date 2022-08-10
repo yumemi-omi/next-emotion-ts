@@ -1,2 +1,3 @@
-## NextJs x Emotion x TypeScript template
+## nextjs / typescript / emotion template
+
 ## Apply Renovate to maintain packages.
