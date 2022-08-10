@@ -1,19 +1,11 @@
 /** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
-const config =  {
+const config = {
   parser: '@typescript-eslint/parser',
-  plugins: [
-    '@emotion',
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'prettier'
-  ],
+  plugins: ['@emotion', '@typescript-eslint'],
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    'next/core-web-vitals',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
     'prettier',
   ],
   env: {
@@ -33,8 +25,26 @@ const config =  {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'react-hooks/exhaustive-deps': 'warn',
-    "@emotion/pkg-renaming": "error",
+    '@emotion/pkg-renaming': 'error',
+    'import/order': [
+      'warn',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always',
+        pathGroupsExcludedImportTypes: ['builtin'],
+        alphabetize: { order: 'asc', caseInsensitive: true },
+      },
+    ],
   },
 };
 
-module.exports = config
+module.exports = config;

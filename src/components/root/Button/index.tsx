@@ -1,5 +1,9 @@
-import { FC } from 'react';
+import { PropsWithChildren } from 'react';
 
-const Button: FC = () => <button className="btn-blue">ボタン</button>;
+type ButtonProps = PropsWithChildren;
+
+const Button = ({ children }: ButtonProps) => (
+  <button className="btn-blue">{children}</button>
+);
 
 export default Button;
